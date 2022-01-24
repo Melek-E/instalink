@@ -41,9 +41,9 @@ current_url = driver.current_url
 username = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[name='username']")))
 password = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "input[name='password']")))
 username.clear()
-driver.find_element_by_name("username").send_keys('selenium42')
+driver.find_element_by_name("username").send_keys(input('username'))
 password.clear()
-driver.find_element_by_name("password").send_keys('fuckmyself')
+driver.find_element_by_name("password").send_keys(input('password'))
 time.sleep(1)
 driver.find_element_by_name("password").send_keys(u'\ue007')
 
