@@ -21,7 +21,7 @@ import requests
 # Fill in your details here to be posted to the login form.
 payload = {
     'inUserName': 'selenium42',
-    'inUserPass': 'fuckmyself'
+    'inUserPass': ''
 }
 
 # Use 'with' to ensure the session context is closed after use.
